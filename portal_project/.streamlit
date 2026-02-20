@@ -1,0 +1,193 @@
+
+
+[connections]
+spreadsheet_id = "#"
+
+[gcp_service_account]
+type = ""
+project_id = ""
+private_key_id = ""
+private_key = 
+client_email = ""
+client_id = ""
+auth_uri = ""
+token_uri = ""
+auth_provider_x509_cert_url = ""
+client_x509_cert_url = ""
+universe_domain = ""
+
+[google_apps_script] 
+search_url = ""
+
+# ===============================================================
+[users]
+
+# ===============================================================
+[companies]
+
+# ===============================================================
+[teams]
+ 
+# ===============================================================
+[directors]
+
+# ===============================================================
+[page_settings]
+
+[page_settings.overdue]
+  [page_settings.overdue.delta_express]
+  worksheet = "Overdue"
+  sales_col = "Sales"
+  customer_col = "CUSTOMER NAME"
+  total_col = "TOTAL"
+  status_col = "STATUS"
+
+  [page_settings.overdue.carolina_ff]
+  worksheet = "Overdue CLs FF"
+  filter_col = "Type"
+  exclude_vals = ["MX"]
+  sales_col = "Sales"
+  customer_col = "CUSTOMER NAME"
+  total_col = "TOTAL"
+  status_col = "STATUS"
+
+  [page_settings.overdue.carolina_ff_mex]
+  worksheet = "Overdue CLs FF"
+  filter_col = "Type"
+  filter_val = "MX"
+  sales_col = "Sales"
+  customer_col = "CUSTOMER NAME"
+  total_col = "TOTAL"
+  status_col = "STATUS"
+
+  [page_settings.overdue.us_inbound]
+  worksheet = "Overdue US"
+  sales_col = "Sales"
+  customer_col = "CUSTOMER NAME"
+  total_col = "TOTAL"
+  status_col = "STATUS"
+
+  [page_settings.overdue.dex_global]
+  worksheet = "Overdue Dex"
+  sales_col = "Sales"
+  customer_col = "CUSTOMER NAME"
+  total_col = "TOTAL"
+  status_col = "STATUS"
+
+# ===============================================================
+[page_settings.customers]
+  [page_settings.customers.delta_express]
+  worksheet = "Customers"
+  sales_col = "Sales representative"
+  customer_col = "Customer Name"
+  status_col = "STATUS"
+  summary_cols = [
+      "Customer Name", "Credit limit", "STATUS", "Payment Term", 
+      "WCA/JCTrans","WCA/JCTRANS ID","Membership Expiration date", "COUNTRY", "Sales representative"
+  ]
+
+  [page_settings.customers.carolina_ff]
+  worksheet = "Customers CLs FF"
+  filter_col = "Division"
+  exclude_vals = ["MX"]
+  sales_col = "Sales Rep"
+  customer_col = "Broker"
+  status_col = "Status"
+  summary_cols = [
+      "Broker", "Credit limit", "STATUS", "Payment Term", 
+      "WCA/JC Trans/Cnee/NONE","ID/MC","Member Expiration", "COUNTRY", "Sales Rep"
+  ]
+
+  [page_settings.customers.carolina_ff_mex]
+  worksheet = "Customers CLs FF" 
+  filter_col = "Division"
+  filter_val = "MX"
+  sales_col = "Sales Rep"
+  customer_col = "Broker"
+  status_col = "Status"
+  summary_cols = [
+      "Broker", "Credit limit", "STATUS", "Payment Term", 
+      "WCA/JC Trans/Cnee/NONE","ID/MC","Member Expiration", "COUNTRY", "Sales Rep"
+  ]
+
+  [page_settings.customers.us_inbound]
+  worksheet = "Customers US"
+  sales_col = "Sales representative"
+  customer_col = "CLIENT"
+  status_col = "STATUS"
+  summary_cols = [
+      "CLIENT", "Credit limit", "STATUS", "Payment Terms", 
+      "WCA/JCTrans ID", "WCA/JCTrans ID","Membership Expiration date", "COUNTRY", "Sales representative"
+  ]
+
+  [page_settings.customers.dex_global]
+  worksheet = "Customers Dex"
+  sales_col = "Sales representative"
+  customer_col = "Client"
+  status_col = "STATUS"
+  summary_cols = [
+      "Client", "Credit limit", "STATUS", "Payment Term", 
+      "WCA/JCTrans", "Active/Expired", "COUNTRY", "Sales representative"
+  ]
+
+# ===============================================================
+[page_settings.bonuses]
+  [page_settings.bonuses.delta_express]
+  worksheet = "Bonuses"
+  sales_col = "Sales"
+  shipment_col = "Ship#"
+  month_col = "Month"
+  result_col = "Result"
+  summary_cols = ["Ship#", "Client", "Sales", "Result", "Σ Profit Bonus"]
+
+# ===============================================================
+[page_settings.notifications]
+  [page_settings.notifications.delta_express]
+  worksheet = "Noti"
+  sales_col = "Торговый представитель"
+  client_col = "Клиент"
+  portal_col = "Портал"
+  days_left_col = "Дней до истечения"
+  expiry_date_col = "Дата истечения"
+  id_col = "WCA/JC Trans ID"
+  noted_by_col = "NotedBy"
+
+  [page_settings.notifications.carolina_ff]
+  worksheet = "Noti CLs FF"
+  sales_col = "Торговый представитель"
+  client_col = "Клиент"
+  portal_col = "Портал"
+  days_left_col = "Дней до истечения"
+  expiry_date_col = "Дата истечения"
+  id_col = "WCA/JC Trans ID"
+  noted_by_col = "NotedBy"
+
+  [page_settings.notifications.carolina_ff_mex]
+  worksheet = "Noti CLs FF"
+  sales_col = "Торговый представитель"
+  client_col = "Клиент"
+  portal_col = "Портал"
+  days_left_col = "Дней до истечения"
+  expiry_date_col = "Дата истечения"
+  id_col = "WCA/JC Trans ID"
+  noted_by_col = "NotedBy"
+
+  [page_settings.notifications.us_inbound]
+  worksheet = "Noti US"
+  sales_col = "Торговый представитель"
+  client_col = "Клиент"
+  portal_col = "Портал"
+  days_left_col = "Дней до истечения"
+  expiry_date_col = "Дата истечения"
+  id_col = "WCA/JC Trans ID"
+  noted_by_col = "NotedBy"
+
+  [page_settings.notifications.dex_global]
+  worksheet = "Noti Dex"
+  sales_col = "Торговый представитель"
+  client_col = "Клиент"
+  portal_col = "Портал"
+  days_left_col = "Дней до истечения"
+  expiry_date_col = "Дата истечения"
+  id_col = "WCA/JC Trans ID"
+  noted_by_col = "NotedBy"

@@ -39,7 +39,7 @@ def get_viewable_logins(username, company_key):
     СТРОГО НА ОСНОВЕ ВЫБРАННОЙ КОМПАНИИ.
     """
     # Особые права для администраторов
-    if username in ["admin", "dariga","erik", "shelby","operations"]:
+    if username in ["admin", "dariga","operations"]:
         return "SEE_ALL"
     
     # Сначала проверяем, является ли пользователь директором В ЭТОЙ КОМПАНИИ
@@ -209,4 +209,5 @@ with bonuses_tab:
     st.header("Team's Bonuses")
     if df_bonuses.empty: st.info("No bonus data available for the current selection.")
     else:
+
         st.dataframe(df_bonuses.reset_index(drop=True), use_container_width=True, height=600, hide_index=True)

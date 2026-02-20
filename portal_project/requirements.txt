@@ -1,0 +1,9 @@
+# requirements.txt - ПРАВИЛЬНАЯ ВЕРСИЯ
+
+streamlit
+gspread
+pandas
+requests
+streamlit-lottie
+google-auth-oauthlib
+oauth2client
